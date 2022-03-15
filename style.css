@@ -1,0 +1,173 @@
+/*
+Theme Name: topForum
+*/
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('assets/fonts/CenturyGothic.woff'), url('assets/fonts/CenturyGothic.eot'), url(assets/fonts/CenturyGothic.ttf);
+}
+body {
+    font-family: 'CenturyGothic';
+    background-color: silver;
+    text-align: center;
+}
+
+
+section {
+    margin-bottom: 10px;
+   background: white;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.header-dark {
+    display: flex;
+    justify-content: space-between;
+    background: blue;
+}
+
+.header-white {
+    display: flex;
+    justify-content: space-between;
+    background: yellow;
+}
+
+button {
+    min-width: 180px;
+    margin: 10px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.header-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+    width: 150px;
+    width: 150px;
+}
+
+footer {
+    background: #111111;
+    color: #00A8EF;
+    text-align: left;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.footer_item {
+    text-align: left;
+}
+
+.main {
+    font-size: 20px;
+    margin-top: 10px;
+    min-height: 55vh;
+}
+
+.for {
+    display: flex;
+    justify-content: center;
+}
+
+.for_image {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.copyright {
+    border-top: 1px solid red;
+    padding: 20px;
+    margin: 20px;
+}
+
+.slider_img {
+    max-height: 400px;
+}
+
+.slider_sponsors {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider_sponsors_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider_item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.slider_feedbacks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider_feedbacks_item {
+    width: 400px;
+    padding: 40px;
+    border-radius: 30px;
+    background: rgba(0, 166, 153, 0.42);
+    display: flex;
+}
+
+.slider_feedbacks_img {
+    border-radius: 70px;
+    width: 200px;
+}
+
+.header_nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.header__nav-item {
+    font-weight: 800;
+    color: white;
+    margin-left: 20px;
+}
+
+.header__nav-item-active {
+    color: yellow;
+}
+
+.footer_nav {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+
+.footer__nav-item {
+    display: flex;
+}
+
+
+.sub-menu ul {
+    text-align: left;
+    list-style-type: none;
+    position: absolute;
+}
+.sub-menu ul li {
+    padding: 10px;
+    background: blue;
+    border: 1px solid yellow;
+    display: none;
+}
+
+.sub-menu.open ul li {
+    display: block;
+}
+

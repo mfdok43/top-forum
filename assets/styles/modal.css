@@ -1,0 +1,50 @@
+/* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+    text-align: right;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+}
+
+.form-item {
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 20px;
+}

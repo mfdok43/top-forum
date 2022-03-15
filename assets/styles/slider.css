@@ -1,0 +1,38 @@
+#gallery{
+    display: flex;
+    width: 640px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#gallery .photos img{
+    width: 100%;
+    display: none;
+}
+
+#gallery .photos img:first-child{
+    display: block;
+}
+
+.buttons {
+    border: none;
+}
+
+.button {
+
+    background: none;
+    border: none;
+    font-size: 120px;
+    height: 90%;
+}
+
+
+.button:hover {
+    border-radius: 500px;
+    background: #00A8EF;
+
+}
+
+.slider_img {
+    max-width: 600px;
+}
