@@ -16,25 +16,23 @@
 
 <header>
     <div class="header-dark">
+        <div class="header__menu">
+            <div class="menu__icon">
+                <q></q>
+                <span></span>
+            </div>
+                <?php
+                wp_nav_menu( [
+                    'menu'            => 'Main',
+                    'echo'            => true,
+                    'fallback_cb'     => 'wp_page_menu',
+                    'items_wrap'      => '<ul class="header_nav">%3$s</ul>',
+                    'depth'           => 0,
+                ] );
+                ?>
+        </div>
 
-        <nav class="header_menu">
-          <?php
-          wp_nav_menu( [
-              'menu'            => 'Main',
-              'container'       => false,
-              'menu_class'      => 'header_nav',
-              'echo'            => true,
-              'fallback_cb'     => 'wp_page_menu',
-              'items_wrap'      => '<ul class="header_nav">%3$s</ul>',
-              'depth'           => 0,
-          ] );
-          ?>
-        </nav>
 
-        <button>
-                Top Forum Club
-            </a>
-        </button>
     </div>
     <div class="header-white">
         <div class="header-logo">

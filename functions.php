@@ -17,6 +17,7 @@ function top_forum_scripts () {
     wp_enqueue_script('slider-script', get_template_directory_uri() . '/assets/js/slider.js', array(), null, true);
     wp_enqueue_script('sub-menu-script', get_template_directory_uri() . '/assets/js/sub-menu.js', array(), null, true);
     wp_enqueue_script('modal-script', get_template_directory_uri() . '/assets/js/modal.js', array(), null, true);
+    wp_enqueue_script('burger-script', get_template_directory_uri() . '/assets/js/burger.js', array(), null, true);
     wp_deregister_script('jquery');
     wp_register_script('jquery','https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js');
     wp_enqueue_script('jquery');
