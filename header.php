@@ -18,18 +18,22 @@
     <div class="header-dark">
         <div class="header__menu">
             <div class="menu__icon">
-                <q></q>
+                <img src="assets/img/burger.svg">
+                <q class="quote"></q>
                 <span></span>
             </div>
+            <nav id="menu">
                 <?php
                 wp_nav_menu( [
                     'menu'            => 'Main',
                     'echo'            => true,
                     'fallback_cb'     => 'wp_page_menu',
+                    'after'           => '<span class="sub-menu-button arrow-span">▼</span>',
                     'items_wrap'      => '<ul class="header_nav">%3$s</ul>',
                     'depth'           => 0,
                 ] );
                 ?>
+            </nav>
         </div>
 
 

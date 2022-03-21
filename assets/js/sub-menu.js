@@ -1,19 +1,11 @@
-let menuElem = document.getElementsByClassName('sub-menu');
+let menuElem = document.getElementsByClassName('menu-item-has-children');
 
-for (let i = 0; i < menuElem.length; i++) {
-    menuElem[i].addEventListener('mouseover', function () {
-        menuElem[i].classList.toggle('open');
-    });
-}
+let subMenu = document.querySelectorAll('.menu-item-has-children span')
+let subMenu1 = document.querySelectorAll('.submenu-item span')
 
-for (let j = 0; j < menuElem.length; j++) {
-    menuElem[i].addEventListener('mouseout', function () {
-        menuElem[j].classList.remove('open');
-        if (menuElem[j].children) {
-            console.log('dfgdg')
-        }
-    });
-}
+// let burger = document.getElementById('burger').addEventListener('click',function (e){
+//     burger.style.display = 'none'
+// })
 
 const isMobile = {
     Android: function () {
@@ -41,10 +33,41 @@ const isMobile = {
     }
 };
 
+
+
+for (let j=0; j < subMenu.length; j++) {
+    subMenu[j].classList.toggle('sub-menu-button')
+}
+
+for (let i=0; i < subMenu1.length; i++) {
+    subMenu1[i].classList.toggle('sub-menu-button-open')
+}
+
+
 if (isMobile.any()) {
  document.body.classList.add('touch')
+    let menuArrows = document.querySelectorAll('.arrow-span')
+    if (menuArrows.length>0) {
+        for (let h = 0; h < menuArrows.length; h++) {
+            const menuArrow = menuArrows[h]
+            menuArrow.addEventListener('click',function (e){
+                menuArrow.parentElement.classList.toggle('_active')
+            })
+        }
+    }
 }else {
     document.body.classList.add('pc')
+    for (let i = 0; i < menuElem.length; i++) {
+        menuElem[i].addEventListener('mouseover', function () {
+            menuElem[i].classList.toggle('open');
+        });
+    }
+
+    for (let j = 0; j < menuElem.length; j++) {
+        menuElem[i].addEventListener('mouseout', function () {
+            menuElem[j].classList.remove('open');
+        });
+    }
 }
 
 

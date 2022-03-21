@@ -7,7 +7,8 @@ function top_forum_styles () {
       wp_enqueue_style ('top-forum-style', get_stylesheet_uri() );
     wp_enqueue_style ('slider-style', get_template_directory_uri() . '/assets/styles/slider.css' );
     wp_enqueue_style ('modal-style', get_template_directory_uri() . '/assets/styles/modal.css' );
-   wp_enqueue_style ('animate-style', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' );
+    wp_enqueue_style ('sub-menu-style', get_template_directory_uri() . '/assets/styles/sub-menu.css' );
+    wp_enqueue_style ('media-style', get_template_directory_uri() . '/assets/styles/media.css' );
 }
 
 
