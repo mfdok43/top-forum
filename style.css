@@ -12,6 +12,9 @@ body {
     text-align: center;
 }
 
+/*body._lock {*/
+/*    overflow: hidden;*/
+/*}*/
 
 section {
     margin-bottom: 10px;
@@ -164,6 +167,10 @@ footer {
 
 
 .menu__icon {
+    display: none;
+}
+
+.close_burger {
     display: none;
 }
 

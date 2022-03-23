@@ -1,67 +1,52 @@
 
 @media (max-width: 767px) {
     .menu__icon {
-        margin: 15px;
-        z-index: 5;
-        display: block;
-        position: relative;
-        width: 30;
-        height: 18;
         cursor: pointer;
-    }
-    .menu__icon span,
-    .menu__icon::before,
-    .menu__icon::after {
-        margin: 3%;
-        left: 0;
-        position: absolute;
-        height: 25%;
-        width: 10%;
-        border-radius: 20px;
-        transition: all 0.3s ease 0s;
-        background-color: yellow;
+        width: 40px;
+        display: block;
+        margin: 10px;
     }
 
-    .menu__icon::before,
-    .menu__icon::after {
-        content: '';
-    }
-
-    .menu__icon::before {
-        top: 0;
-    }
-
-    .menu__icon::after {
-        bottom: 0;
-    }
-
-    .menu__icon span {
-        top: 60%;
-        transform: scale(1) translate(0px, -50%);
+    .header-logo {
+        margin-left: 10px;
     }
 
     .header__menu {
-       /*transform: translate(-100%, 0px);*/
+        left: -100%;
         overflow: auto;
-        background: rgba(17, 17, 17, 0.85);
+        background: rgba(17, 17, 17, 0.92);
         position: fixed;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 75%;
         height: 100%;
         transition: left 0.3s ease 0s;
     }
 
-    .header__menu::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        background: blue;
-        z-index: 2;
-    }
+    .header__menu._active {
+    /*    overflow: auto;*/
+    /*    background: rgba(17, 17, 17, 0.92);*/
+    /*    position: fixed;*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    width: 75%;*/
+    /*    height: 100%;*/
+    /*    transition: left 0.3s ease 0s;*/
+         left: 0;
+   }
+
+
+
+    /*.header__menu::before {*/
+    /*    content: '';*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    width: 100%;*/
+    /*    height: 60px;*/
+    /*    background: blue;*/
+    /*    z-index: 2;*/
+    /*}*/
 
 
     #menu {
@@ -99,5 +84,18 @@
 
     .arrow-span:hover {
         background: none;
+    }
+
+    input {
+        width: 100%;
+        height: 30px;
+    }
+
+    .close_burger {
+        display: block;
+        color: aqua;
+        font-size: 44px;
+        text-align: right;
+        margin-right: 10px;
     }
 }

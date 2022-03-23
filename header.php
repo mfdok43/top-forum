@@ -16,12 +16,12 @@
 
 <header>
     <div class="header-dark">
+        <div class="menu__icon">
+            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/burger.svg" alt="burger">
+        </div>
+
         <div class="header__menu">
-            <div class="menu__icon">
-                <img src="assets/img/burger.svg">
-                <q class="quote"></q>
-                <span></span>
-            </div>
+            <span class="close_burger">&times;</span>
             <nav id="menu">
                 <?php
                 wp_nav_menu( [

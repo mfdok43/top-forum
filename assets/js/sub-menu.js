@@ -70,4 +70,22 @@ if (isMobile.any()) {
     }
 }
 
+let iconMenu = document.querySelector('.menu__icon')
+let menuBody = document.querySelector('.header__menu')
+let iconClose = document.querySelector('.close_burger')
+
+if (iconMenu) {
+    let menuBody = document.querySelector('.header__menu')
+    iconMenu.addEventListener('click', function () {
+        // document.body.classList.toggle('_lock')
+        menuBody.classList.toggle('_active');
+    })
+}
+
+
+if (iconClose) {
+    iconClose.addEventListener('click', function () {
+        menuBody.classList.remove('_active');
+    })
+}
 
